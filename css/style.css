@@ -1,0 +1,132 @@
+body {
+  display: flex;
+  min-width: 960px;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+a {
+  color: inherit;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-image: url("../img/bg.avif");
+  background-size: cover;
+  width: 40%;
+}
+
+.left .banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .4);
+  width: 100%;
+  height: 125px;
+  margin-top: 200px;
+}
+
+.left .banner img {
+  width: 74px;
+}
+
+.left .banner h1 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 74px;
+  font-weight: 700;
+}
+
+.left .copyright {
+  padding: 8px 0;
+}
+
+.right {
+  width: 60%;
+  background-color: rgb(250, 250, 250);
+}
+
+.description {
+  background-color: #eee;
+  height: calc(325px - 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 32px;
+}
+
+.description p {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 16px;
+}
+
+.form {
+  padding: 32px;
+  background-color: #fff;
+  box-shadow: 0 6px 2px -2px #ddd;
+}
+
+.form h2 {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 32px;
+}
+
+.form .form-row {
+  display: flex;
+  gap: 32px;
+  padding-bottom: 16px;
+}
+
+.form .form-row:last-child {
+  padding-bottom: 0;
+}
+
+.form .form-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form label {
+  text-transform:uppercase;
+  padding-bottom: 3px;
+}
+
+.form input {
+  width: 80%;
+  height: 24px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+
+.subscription {
+  padding: 32px;
+}
+
+.subscription button {
+  padding: 12px 40px;
+  font-weight: 700;
+  color: #fff;
+  background-color: rgb(90, 140, 90);
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.subscription button:hover {
+  background-color: rgba(90, 140, 90, .9);
+  cursor: pointer;
+}
+
+.subscription a {
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(90, 140, 90);
+}
