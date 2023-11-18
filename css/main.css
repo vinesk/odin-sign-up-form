@@ -104,11 +104,20 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 0.75rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .main .form form input {
-  padding: 0.25rem 0;
+  padding: 0.5rem 0;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.25rem;
+}
+
+.main .form form .error {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding-top: 0.25rem;
+  color: rgb(180, 15, 15);
 }
 
 .main .sign-up {
@@ -126,6 +135,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.main .sign-up button:hover {
+  background-color: #48573b;
+}
+
 .main .sign-up a {
   text-decoration: none;
   font-weight: 700;
@@ -133,9 +146,8 @@ body {
   transition: 0.2s;
 }
 
-.main .sign-up button:hover,
 .main .sign-up a:hover {
-  background-color: #48573b;
+  color: #48573b;
 }
 
 @media screen and (max-width: 768px) {
@@ -145,5 +157,11 @@ body {
 
   .sidebar {
     width: 100%;
+  }
+
+  .caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
   }
 }
